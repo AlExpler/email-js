@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Bold.ttf") format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: Roboto-Regular, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-X: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, rgb(38, 40, 74), rgb(14, 168, 214));
+    /**/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+div {
+    width: 360px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(38, 40, 74);
+}
+
+label {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+    width: 100%;
+    height: 36px;
+    border: 2px solid rgb(38, 40, 74);
+    border-radius: 18px;
+    font-size: 20px;
+    background-color: #eefffd;
+    box-shadow: inset 0px 3px 7px 0px #2c8076;
+}
+
+input:last-child {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #8787ff;
+    box-shadow: inset 0px -3px 7px 0px #3b1056;
+    cursor: pointer;
+    color: #4b1b79;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+input:last-child:hover {
+    color: #000000;
+    background-color: #aaaaff;
+}
